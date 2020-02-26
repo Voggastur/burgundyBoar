@@ -11,17 +11,22 @@ form {
 .confirmAge {
     margin-left: 20px;
     width: 120px;
-    height: 30px;
-    background-color: brown;
-    color: mintcream;
-    font-size: 1,1em;
+    height: 35px;
+    border: none;
+    background-color: navy;
+    color: tan;
+    font-size: 1,3em;
     font-family: 'comic-sans', sans-serif;
+    font-weight: 600;
     transform:scale(1);
-    transition-property: transform;
+    transition-property: all;
     transition-timing-function: ease-in-out;
     transition-duration: 0.5s;
 }
 
 .confirmAge:hover {
     transform: scale(1.2);
+    background-color: tan;
+    color: navy;
+    border: indigo solid 3px;
 }
