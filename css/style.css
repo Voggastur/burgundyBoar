@@ -1,0 +1,27 @@
+body {
+    background-color: aquamarine;
+}
+
+form {
+    margin: 30px;
+    padding: 10px;
+    border: black 1px solid;
+}
+
+.confirmAge {
+    margin-left: 20px;
+    width: 120px;
+    height: 30px;
+    background-color: brown;
+    color: mintcream;
+    font-size: 1,1em;
+    font-family: 'comic-sans', sans-serif;
+    transform:scale(1);
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.confirmAge:hover {
+    transform: scale(1.2);
+}
