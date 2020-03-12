@@ -4,8 +4,59 @@ body {
     padding: 0;
 }
 
+.headingContainer {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 20vh;
+    background: #000;
+}
+
+h2 {
+    position:relative;
+    margin: 0;
+    font-size: 3em;
+    font-weight: 900;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+    animation: confused 3s alternate infinite;
+}
+
+@keyframes confused {
+    0% {
+        transform: translate(0) scale(1);
+    }
+    15% {
+        transform: translate(-30px) scale(0.7) rotate(-15deg);
+    }
+    30% {
+        transform: translate(-20px) scale(1.2) rotate(5deg);
+    }
+    50% {
+        transform: translate(10px) rotate(-30deg);
+    }
+    65% {
+        transform: scale(0.6) translate(30px);
+    }
+    75% {
+        transform: translate(-30px) scale(1.1) rotate(-10deg);
+    }
+    85% {
+        transform: translate(-10px) scale(0.8) rotate(20deg);
+    }
+    100% {
+        transform: translate(0) scale(1) rotate(0deg);
+    }
+
+}
+
+h2 span {
+    color: #ff022c;
+}
+
 .singleButtonContainer {
-    background: #070418;
+    background: #11093d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,12 +144,14 @@ a:hover .snake:nth-child(4) {
     transition-delay: 0.75s;
 }
 
+/* Hereby starts the multiple buttons section */
+
 .pluralButtonsContainer {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 650px;
     flex-direction: column;
     background: #050801;
 }
@@ -127,7 +180,7 @@ a:hover .snake:nth-child(4) {
 
 .neonButton2:hover {
     background: #03e9f4;
-    color: 050801;
+    color: #050801;
     box-shadow: 0 0 5px #03e9f3,
                 0 0 25px #03e9f3,
                 0 0 50px #03e9f3,
@@ -212,4 +265,9 @@ a .snake2:nth-child(4) {
     50%, 100% {
         bottom: 100%;
     }
+}
+
+footer {
+    height: 200px;
+    background: #11093d;
 }
