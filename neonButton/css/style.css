@@ -77,7 +77,7 @@ h2 span {
     transition: 0.2s;
 }
 
-a:hover {
+.neonButton:hover {
     color: #255784;
     background: #2196f3;
     box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
@@ -165,9 +165,9 @@ a:hover .snake:nth-child(4) {
     font-size: 24px;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 4px;
     overflow: hidden;
     transition: 0.5s;
-    letter-spacing: 4px;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
