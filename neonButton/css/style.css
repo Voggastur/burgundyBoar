@@ -17,39 +17,21 @@ h2 {
     margin: 0;
     font-size: 3em;
     font-weight: 900;
-    color: #fff;
-    z-index: 1;
-    overflow: hidden;
-    animation: confused 3s alternate infinite;
+    animation: dance 1s linear infinite;
 }
 
-@keyframes confused {
-    0% {
-        transform: translate(0) scale(1);
-    }
-    15% {
-        transform: translate(-30px) scale(0.7) rotate(-15deg);
-    }
-    30% {
-        transform: translate(-20px) scale(1.2) rotate(5deg);
-    }
-    50% {
-        transform: translate(10px) rotate(-30deg);
-    }
-    65% {
-        transform: scale(0.6) translate(30px);
-    }
-    75% {
-        transform: translate(-30px) scale(1.1) rotate(-10deg);
-    }
-    85% {
-        transform: translate(-10px) scale(0.8) rotate(20deg);
-    }
-    100% {
-        transform: translate(0) scale(1) rotate(0deg);
-    }
-
+@keyframes dance {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20% {
+    transform: rotate(-30deg);
+  }
+  80% {
+    transform: rotate(30deg);
+  }
 }
+
 
 h2 span {
     color: #ff022c;
@@ -271,3 +253,4 @@ footer {
     height: 200px;
     background: #11093d;
 }
+
